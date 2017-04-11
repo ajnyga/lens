@@ -26,9 +26,11 @@ CoverView.Prototype = function() {
 
   this.render = function() {
     NodeView.prototype.render.call(this);
-	
-	this.content.appendChild('<a class="back-button" href="./">Back</a>');
-
+		
+		
+	this.content.appendChild($$('.back-button', {
+          html: '<a href="./">Back</a>'
+	}));
 
     var node = this.node;
     var pubInfo = this.node.document.get('publication_info');
