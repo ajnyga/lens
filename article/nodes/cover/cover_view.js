@@ -29,7 +29,7 @@ CoverView.Prototype = function() {
 		
 		
 	this.content.appendChild($$('.back-button', {
-          html: '<a href="./">Back</a>'
+          html: '<a href="./">'+translate.back+'</a>'
 	}));
 
     var node = this.node;

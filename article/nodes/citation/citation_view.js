@@ -122,9 +122,9 @@ CitationView.Prototype = function() {
       var citationUrlsEl = $$('.citation-urls');
 
       _.each(node.citation_urls, function(url) {
-        citationUrlsEl.appendChild($$('a.url', {
-          href: url.url,
-          text: url.name,
+        citationUrlsEl.appendChild($$('a', {
+          href: url,
+          text: url,
           target: "_blank"
         }));
       });
